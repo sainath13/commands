@@ -12,6 +12,13 @@ adb shell input keyevent 82 <br/>
 initdb db (in _projects) <br/>
 pg_ctl -D db/ -l logfile start <br/>
 pg_ctl postgres<br/>
+createdb saitama
+psql => now the console will start
+
+CREATE USER postgres;
+ALTER USER postgres WITH SUPERUSER;
+ALTER USER postgres PASSWORD 'postgres';
+\q
 
 
 ## redis<br/>
